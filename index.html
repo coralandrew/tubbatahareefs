@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tubbataha Reefs Natural Park</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000; /* Black background */
+            color: #FFD700; /* Default yellow */
+        }
+
+        .navbar, .footer {
+            background-color: #111;
+        }
+
+        a {
+            color: #FFD700;
+        }
+
+        a:hover {
+            color: #FFA500;
+            text-decoration: none;
+        }
+
+        /* Section titles and card titles */
+        .section-title, .card-title {
+            color: #FFD700;
+            transition: transform 0.3s;
+        }
+
+        /* Cards */
+        .card {
+            background-color: #111;
+            border: 1px solid #FFD700;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            position: relative; 
+            padding: 15px;
+            color: #FFD700;
+        }
+
+        .card img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #FFD700;
+            transition: transform 0.3s;
+        }
+
+        /* Glow on card hover */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px #FFD700, 0 0 40px #FFA500, 0 0 60px #FFD700;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Text inside card glows when the card is hovered */
+        .card:hover .section-title,
+        .card:hover .card-title,
+        .card:hover p,
+        .card:hover li {
+            color: #FFFF00; /* Bright yellow */
+            text-shadow: 0 0 5px #FFD700, 0 0 15px #FFA500, 0 0 25px #FFD700;
+        }
+
+        /* Lists and paragraphs default */
+        #history p, #tourism p, #facts p, #geography p, #biodiversity p,
+        #history li, #tourism li, #facts li, #geography li, #biodiversity li {
+            color: #FFD700;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            transition: text-shadow 0.3s, color 0.3s;
+        }
+
+        /* Adjust section titles */
+        #tourism .section-title,
+        #facts .section-title,
+        #history .section-title,
+        #geography .section-title,
+        #biodiversity .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        header {
+            transition: box-shadow 0.3s, text-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        header:hover {
+            box-shadow: 0 0 30px #FFD700, 0 0 60px #FFA500, 0 0 90px #FFD700 inset;
+        }
+
+        header:hover h1,
+        header:hover p {
+            color: #FFFF00;
+            text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 30px #FFD700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-5">
+        <a class="navbar-brand" href="#">Tubbataha Reefs</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#geography">Geography</a></li>
+                <li class="nav-item"><a class="nav-link" href="#biodiversity">Biodiversity</a></li>
+                <li class="nav-item"><a class="nav-link" href="#history">History</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tourism">Tourism</a></li>
+                <li class="nav-item"><a class="nav-link" href="#facts">Interesting Facts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center py-5" style="background-image: url('C:/xampp/htdocs/Louvrewebsite/assets/over.jpg'); background-size: cover; background-position: center;">
+        <div class="bg-dark bg-opacity-75 p-5 rounded">
+            <h1 class="display-4">Tubbataha Reefs Natural Park</h1>
+            <p class="lead">A Pristine Marine Ecosystem & UNESCO World Heritage Site</p>
+        </div>
+    </header>
+
+    <div class="container py-5">
+
+        <!-- Overview Section -->
+        <section id="overview" class="mb-5 card">
+            <h2 class="section-title">Overview</h2>
+            <p>Tubbataha Reefs Natural Park is a UNESCO World Heritage Site and one of the most pristine marine ecosystems in the Philippines. Located in the middle of the Sulu Sea, it is a remote atoll system consisting of two large coral reefs (North and South Atoll) and the smaller Cagayancillo Reef. The park covers approximately 97,030 hectares of protected waters.</p>
+            <img src="C:/xampp/htdocs/Louvrewebsite/assets/over.jpg" class="img-fluid rounded my-3" alt="Tubbataha Reefs">
+        </section>
+
+        <!-- Geography Section -->
+        <section id="geography" class="mb-5 card">
+            <h2 class="section-title">Geography</h2>
+            <ul>
+                <li><strong>Location:</strong> Sulu Sea, Palawan, Philippines</li>
+                <li><strong>Distance from Mainland:</strong> About 150 km southeast of Puerto Princesa City</li>
+                <li><strong>Composition:</strong> North Atoll, South Atoll, Cagayancillo Reef</li>
+                <li><strong>Features:</strong> Coral walls dropping up to 1,000 meters, white sand cays, lagoon areas in both atolls</li>
+            </ul>
+            <p>Tubbataha is accessible only by liveaboard boats during the official diving season (March to June) due to its remote location and rough sea conditions.</p>
+        </section>
+
+        <!-- Biodiversity Section -->
+        <section id="biodiversity" class="mb-5 card">
+            <h2 class="section-title">Biodiversity</h2>
+            <ul>
+                <li>Tubbataha is renowned for its incredible biodiversity, making it a diver’s paradise.</li>
+            </ul>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <img src="C:/xampp/htdocs/Louvrewebsite/assets/fish.jpeg" class="card-img-top" alt="Marine Life">
+                        <div class="card-body">
+                            <h5 class="card-title">Marine Life</h5>
+                            <p>Over 360 species of corals, more than 600 species of fish including napoleon wrasse, barracudas, and jacks. Sharks and rays like whitetip reef sharks, hammerhead sharks, manta rays, and eagle rays.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <img src="C:/xampp/htdocs/Louvrewebsite/assets/bird.jpg" class="card-img-top" alt="Birds and Other Species">
+                        <div class="card-body">
+                            <h5 class="card-title">Birds & Other Species</h5>
+                            <p>Migratory seabirds such as frigatebirds, terns, and brown boobies; nesting site for endangered species. Sea turtles (green, hawksbill) and marine mammals like dolphins and occasional whale sharks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section id="history" class="mb-5 card">
+            <h2 class="section-title">History and Conservation</h2>
+            <ul>
+                <li><strong>Established as Protected Area:</strong> 1988</li>
+                <li><strong>UNESCO World Heritage Site:</strong> Declared in 1993</li>
+                <li><strong>Management:</strong> Philippine government through DENR, in cooperation with local and international partners</li>
+            </ul>
+            <p>Conservation efforts include strict no-fishing zones, permits for visitors, continuous research, monitoring, and patrolling to prevent illegal fishing and coral damage. Tubbataha is a model for marine protection due to its thriving ecosystems despite surrounding human activity.</p>
+        </section>
+
+        <!-- Tourism Section -->
+        <section id="tourism" class="mb-5 card">
+            <h2 class="section-title">Tourism</h2>
+            <p>Tubbataha is accessible only by liveaboard dive boats, typically operating from March to June. Tourism is regulated to minimize environmental impact.</p>
+            <ul>
+                <li><strong>Popular Activities:</strong> Scuba diving, snorkeling, underwater photography</li>
+                <li><strong>Visitor Tips:</strong> Best time: March to June; bring snorkeling/dive gear, sun protection, seasickness remedies; follow conservation rules</li>
+            </ul>
+            <img src="C:/xampp/htdocs/Louvrewebsite/assets/diver.jpg" class="img-fluid rounded my-3" alt="Diving in Tubbataha">
+        </section>
+
+        <!-- Interesting Facts Section -->
+        <section id="facts" class="mb-5 card">
+            <h2 class="section-title">Interesting Facts</h2>
+            <ul>
+                <li>Tubbataha is composed of two atolls about 15 km apart.</li>
+                <li>Waters exceed 100 meters deep in some areas.</li>
+                <li>The name "Tubbataha" comes from the local phrase meaning “long reef exposed at low tide.”</li>
+                <li>It is a global treasure for marine biodiversity and conservation.</li>
+            </ul>
+        </section>
+
+        <!-- Credits Section -->
+        <section id="credits" class="mb-5">
+            <h2 class="section-title">Credits</h2>
+            <p><strong>Photos:</strong></p>
+            <ul>
+                <li><a href="https://philippinetourismusa.com/the-terrific-tubbataha-reef/" target="_blank">Philippine Tourism USA</a></li>
+                <li><a href="https://link.springer.com/chapter/10.1007/978-94-024-1528-5_84" target="_blank">Springer Link</a></li>
+                <li><a href="https://www.stevedeneef.com/tubbataha-a-national-treasure" target="_blank">Steve Deneef</a></li>
+                <li><a href="https://www.zubludiving.com/destination/philippines/palawan/tubbataha" target="_blank">Zublu Diving</a></li>
+                <li><a href="https://stock.adobe.com/ph/search?k=%22tubbataha+reefs+natural+park%22" target="_blank">Adobe Stock</a></li>
+            </ul>
+            <p><strong>Content:</strong> ChatGPT</p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-3">
+        <p>&copy; 2025 Andrew B. Coral. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
